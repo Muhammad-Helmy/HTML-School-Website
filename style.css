@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif, 'Archivo';
+}
+
+/* Global Tags */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+span {
+  font-size: 9 rem ;
+  color: #000;
+  text-align: center;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: rgb(24, 24, 49);
+}
+
+/* Navbar */
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav .popo{
+  width: 200px;
+  cursor: pointer;
+}
+nav .navigation {
+  display: flex;
+  align-items: center;
+}
+
+nav .navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .navigation ul li {
+  list-style: none;
+  margin: 0 1.5rem; /* Adjust margin as needed */
+  position: relative;
+}
+
+nav .navigation ul li .logonav {
+  width: 23px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav .navigation ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-left: 5px; /* Adjust as needed */
+}
+
+nav .navigation ul li a:hover {
+  color: #3d48be;
+}
+
+/* Home */
+
+#home{
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7));
+  background-image: url("image/Photo.png");
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* pembatas */
+#rectangle{
+  width:100%;
+  height: 10px;
+  position: relative;
+  background:#3f4bc5;
+  box-shadow: black 1px 1px 30px;
+}
+
+/* berita 1dan2 */
+
+.context-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.context-item {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.context-item h3 {
+  margin-top: 6rem;
+  text-align: left;
+}
+
+.context-item p {
+  margin: 0;
+}
+
+.context-item a {
+  display: block;
+  text-align: right;
+  margin-top: 8px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.text-web {
+  flex: 1;
+  text-align: left;
+}
+
+.text-basket {
+  flex: 1;
+}
+
+.b1 {
+  width: auto;
+  height: 15rem;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  box-shadow: #000 1px 10px 30px;
+}
+
+.b2 {
+  width: auto;
+  height: 15rem;
+  margin-right: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  box-shadow: #000 1px 10px 30px;
+}
+
+.basket {
+  text-align: end !important;
+  margin: 1rem;
+  margin-top: -1rem !important;
+  
+}
+
+.bn31.rm {
+  margin-left: 63rem !important;
+}
+
+
+/* Read More Button */
+.bn31 {
+  background-image: linear-gradient(to right, #007bff 0%, #3f4bc5 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  height: 30px;
+  font-size: 1em;
+  padding: 2px;
+  position: relative;
+  text-decoration: none;
+  width: 7em;
+  z-index: 2;
+  margin-left: -0.5rem;
+  box-shadow: #000 -5px 7px 27px;
+}
+
+.bn31:hover {
+  color: #fff;
+}
+
+.bn31 .bn31span {
+  align-items: center;
+  background: #ffff;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+.bn31:hover .bn31span {
+  background: transparent;
+  color: #fff;
+}
+
+/* Style the counter cards */
+.card {
+  margin-top: -70px !important; 
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+  border-radius: 0.8rem;
+  display: inline-block; /* Change display to inline-block */
+  margin: 0 auto; /* Center the card */
+  position: relative; /* Positioning for z-index */
+  z-index: 1; /* Ensure the cards are in front of the rectangle */
+  width: 14rem; /* Adjust width as needed */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+  text-decoration: none;
+}
+
+/* Change background color and text color on hover */
+.card:hover, .card:active {
+  background-color: #3d48be;
+  color: #fff;
+}
+
+.column {
+  float: left; /* Float cards left */
+  box-sizing: border-box; /* Include padding and border in width */
+  padding: 0 7px; /* Add some spacing between cards */
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 10rem; /* Compensate for column padding */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display:flex;
+  clear: both;
+}
+
+/* biner background */
+.asix{
+  margin-top: -53px !important;
+  background-size: cover;
+  position:static;
+  opacity: 0.5;
+  width: 100%; 
+}
+
+/* Container holding the image and the text */
+
+/* Postingan */
+.overlay-text{
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -40.7rem !important;
+  letter-spacing: 1.4px;
+  margin: 0 0 35px;
+  color: #3d48be;
+  margin-bottom: 5rem !important;
+}
+
+.op{
+  margin-top: -10rem !important;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.poss{
+  position: relative;
+  display: flex;
+  margin: 5rem;
+  margin-left: 18rem;
+  border-radius: 5rem;
+}
+
+.poss2{
+  position: relative;
+  display: flex;
+  margin: 5rem;
+  margin-top: -24.5rem;
+  margin-left: 51rem;
+}
+
+.d1{
+  border-radius: 2rem;
+}
+
+.d2{
+  border-radius: 2rem;
+}
+
+
+/* card post1 */
+.card1 {
+  margin-top: -400rem; 
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+  border-radius: 0.8rem;
+  display: inline-block; /* Change display to inline-block */
+  position: relative; /* Positioning for z-index */
+  z-index: 1; /* Ensure the cards are in front of the rectangle */
+  width: 23rem; /* Adjust width as needed */
+  height: 5rem;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+  text-decoration: none;
+  margin-left: -1.5rem;
+}
+
+/* Change background color and text color on hover */
+.card1:hover, .card1:active {
+  background-color: #3d48be;
+  color: #fff;
+}
+
+.column1 {
+  float:inline-start; /* Float cards left */
+  width: 33.33%; /* Set width to one-third of the container */
+  box-sizing: border-box; /* Include padding and border in width */
+  padding: 0 15px; /* Add some spacing between cards */
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row1 {
+  margin-left: 20rem;
+}
+/* slider section */
+/* card post2 */
+.card2 {
+  margin-top: -400rem; 
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+  border-radius: 0.8rem;
+  display: inline-block; /* Change display to inline-block */
+  position: relative; /* Positioning for z-index */
+  z-index: 1; /* Ensure the cards are in front of the rectangle */
+  width: 23rem; /* Adjust width as needed */
+  height: 5rem;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+  text-decoration: none;
+  margin-left: 6.5rem;
+}
+
+/* Change background color and text color on hover */
+.card2:hover, .card2:active {
+  background-color: #3d48be;
+  color: #fff;
+}
+
+.column2 {
+  float:inline-start; /* Float cards left */
+  width: 33.33%; /* Set width to one-third of the container */
+  box-sizing: border-box; /* Include padding and border in width */
+  padding: 0 15px; /* Add some spacing between cards */
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row2 {
+  margin-left: 20rem;
+}
+
+
+/* footer */
+#rec{
+  margin-top: 10rem;
+  width:100%;
+  height: 4rem;
+  position: relative;
+  background:#3f4bc5;
+  box-shadow: black 1px 1px 30px;
+  display: flex; /* Tambahkan flexbox */
+  flex-direction: column; /* Atur tata letak kolom */
+  justify-content: center; /* Pusatkan secara vertikal */
+  align-items: center; /* Pusatkan secara horizontal */
+}
+
+.footer{
+  color: white;
+}
